@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html"],
@@ -7,6 +9,9 @@ module.exports = {
       lightpink: "hsl(275, 100%, 97%)",
       grayishpurple: "hsl(292, 16%, 49%)",
       darkpurple: "hsl(292, 42%, 14%)"
+    },
+    fontFamily: {
+      sans: ["WorkSans", ...defaultTheme.fontFamily.sans]
     },
     extend: {},
   },
